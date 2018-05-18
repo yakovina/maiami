@@ -1,2 +1,63 @@
-.welcome__slide
-    height: 100vh;
+.welcome
+    & .container
+        height: 100vh
+        position: relative
+        margin: 0 auto
+        max-width: 940px
+//повторяется, можно испраивть
+.header
+    position: absolute
+    margin-top: 100px
+    left: 0
+    right: 0
+    text-align: center
+    &__logo
+        
+        position: absolute
+        top: -4rem
+        left: 50%
+        transform: translate(-50%,0)
+        width: 130px
+
+    &__phone
+        float: left
+        font-size: 1.4rem
+        text-decoration: none
+        color: #ffffff
+        opacity: 0.6
+        text-transform: uppercase
+
+    &__call
+        float: right
+        font-size: 1.4rem
+        text-decoration: none
+        color: #ffffff
+        opacity: 0.6
+        text-transform: uppercase
+        border-bottom: 1px dashed #ffffff
+
+.slider
+    position: absolute !important
+    z-index: -1
+
+.slide_item
+    height: 100vh
+    
+.navigation
+    position: absolute
+    bottom: 6rem
+    left: 0
+    right: 0
+    & ul
+        display: flex
+        justify-content: space-between
+        list-style-type: none
+        padding: 0
+    &__item a
+        text-transform: uppercase
+        text-decoration: none
+        color: #ffffff
+        font-weight: 400
+        font-size: 1.6rem
+
+
