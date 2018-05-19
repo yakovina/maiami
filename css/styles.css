@@ -80,11 +80,51 @@ body {
 }
 
 .section__left {
-  width: 33%;
+  width: 50%;
 }
 
 .section__right {
-  width: 50%;
+  width: 33%;
+}
+
+.section__title svg {
+  position: absolute;
+  bottom: -15px;
+  height: 15px;
+  fill: #00aaef;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.section__title h2 {
+  font-size: 4.8rem;
+  font-weight: 300;
+  color: #000000;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  position: absolute;
+  left: 50%;
+  top: -0.5em;
+  transform: translate(-50%, 0);
+  padding: 0;
+}
+
+.section__title h2:after, .section__title h2:before {
+  margin-top: 5px;
+  content: "";
+  width: calc(50% - 2rem);
+  position: absolute;
+  height: 0.2rem;
+  background-color: #00aaef;
+  bottom: 0;
+}
+
+.section__title h2:before {
+  left: 0;
+}
+
+.section__title h2:after {
+  right: 0;
 }
 
 .wrapper {
