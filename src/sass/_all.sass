@@ -3,12 +3,17 @@ html
 body
     background-color: #fff;
     font-family: 'Ubuntu', sans-serif;
-
+    padding-bottom: 54rem
+.container
+    margin: 0 auto
+    max-width: 940px
 .form
     &__field
         margin-bottom: 1rem
 
-
+.logo
+    fill: #ffffff
+    width: 130px
 
 .input
     text-align: center
@@ -25,7 +30,7 @@ body
     &__textarea
         height: 10rem
         resize: none;
-        width: 96%
+        width: 100%
     &:placeholder
         color: #393939
 
@@ -46,3 +51,16 @@ body
         padding: 0 60px
         width: auto
 
+.flexwrap
+        display: flex
+        justify-content: space-between
+
+.section
+    padding: 13rem 0
+    position: relative
+    &:nth-child(odd)
+        background-color: #eeeeee
+    &__left
+        width: 33%
+    &__right
+        width: 50%

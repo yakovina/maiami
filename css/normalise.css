@@ -392,3 +392,8 @@ ul
 {
   margin: 0;
 }
+
+textarea, p{
+  padding: 0;
+  margin: 0;
+}

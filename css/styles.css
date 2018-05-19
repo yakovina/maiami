@@ -5,10 +5,21 @@ html {
 body {
   background-color: #fff;
   font-family: 'Ubuntu', sans-serif;
+  padding-bottom: 54rem;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 940px;
 }
 
 .form__field {
   margin-bottom: 1rem;
+}
+
+.logo {
+  fill: #ffffff;
+  width: 130px;
 }
 
 .input {
@@ -28,7 +39,7 @@ body {
 .input__textarea {
   height: 10rem;
   resize: none;
-  width: 96%;
+  width: 100%;
 }
 
 .input:placeholder {
@@ -54,11 +65,38 @@ body {
   width: auto;
 }
 
+.flexwrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section {
+  padding: 13rem 0;
+  position: relative;
+}
+
+.section:nth-child(odd) {
+  background-color: #eeeeee;
+}
+
+.section__left {
+  width: 33%;
+}
+
+.section__right {
+  width: 50%;
+}
+
+.wrapper {
+  background: #ffffff;
+  position: relative;
+  z-index: 200;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+}
+
 .welcome .container {
   height: 100vh;
   position: relative;
-  margin: 0 auto;
-  max-width: 940px;
 }
 
 .header {
@@ -103,6 +141,7 @@ body {
 
 .slide_item {
   height: 100vh;
+  min-width: 100% !important;
 }
 
 .navigation {
@@ -125,4 +164,46 @@ body {
   color: #ffffff;
   font-weight: 400;
   font-size: 1.6rem;
+}
+
+.about .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about__moto {
+  width: 33%;
+}
+
+.about__text {
+  width: 66%;
+}
+
+.footer {
+  height: 54rem;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.footer__copy {
+  position: absolute;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.6rem;
+  bottom: 66px;
+  left: 0;
+  right: 0;
+}
+
+.footer__logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
