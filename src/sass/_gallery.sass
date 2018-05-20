@@ -1,0 +1,52 @@
+.appart
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    img
+        height: 100%
+        min-width: 100%
+    address
+        margin-top: 1.2rem
+        margin-bottom: 3rem
+        width: 100%
+        font-size: 16px
+        color: #000000
+        font-weight: 500
+        font-style: normal
+        span
+            font-weight: 400
+            color: #00aaef            
+    &__wrapper
+        height: 26rem
+        overflow: hidden
+        img
+            height: 100%
+            width: 100%
+            overflow: hidden
+            object-fit: cover;
+            object-position: 50% 25%;
+        &:nth-of-type(odd)
+            img
+                padding-right: 20px
+                box-sizing: border-box
+.appart_mod-right
+    .appart__wrapper
+        &:first-child
+            width: calc(100% * 2 / 3);
+        &:nth-child(2)
+            width: calc(100% / 3);
+.appart_mod-center
+    .appart__wrapper
+        &:first-child
+            width: 50%
+        &:nth-child(2)
+            width: 50%
+.appart_mod-left
+    .appart__wrapper
+        &:first-child
+            width: calc(100% / 3);
+        &:nth-child(2)
+            width: calc(100% * 2 / 3);
+
+.inline-wrapper
+    text-align: center
