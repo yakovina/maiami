@@ -2,6 +2,7 @@
     & .container
         display: flex
         justify-content: space-between
+        flex-wrap: wrap
     &__moto
         width: 33%
         font-size: 4.8rem
@@ -20,3 +21,16 @@
             list-style-type: decimal
             margin: 5rem 0
             padding-left: 0
+
+@media all and (max-width: 960px)
+    .about
+        background-color: #fff
+        &__moto
+            width: 100%
+            padding-bottom: 3rem
+            br
+                display: none
+        &__text
+            width: 100%
+            ol
+                margin-left: 2em

@@ -5,6 +5,7 @@
     z-index: 200
     box-shadow: 0 0 1rem rgba(0,0,0,.5)
 .welcome
+    position: relative
     & .container
         height: 100vh
         position: relative
@@ -48,6 +49,9 @@
 .slide_item
     height: 100vh
     min-width: 100% !important
+    object-fit: cover;
+    object-position: 50% 50%;
+    overflow: hidden
     
 .navigation
     position: absolute
@@ -59,6 +63,7 @@
         justify-content: space-between
         list-style-type: none
         padding: 0
+        flex-wrap: wrap
     &__item a
         text-transform: uppercase
         text-decoration: none
@@ -67,3 +72,34 @@
         font-size: 1.6rem
 
 
+@media all and (max-width: 720px)
+    .header
+        &__logo
+            left: 0
+            position: absolute
+            transform: translate(0,0)
+        &__phone
+            display: none
+        &__call
+            font-size: 2rem
+    .welcome:before
+        position: absolute
+        top: 0
+        left: 0
+        height: 100%
+        width: 100%
+        content: ""
+        background-color: rgba(0,0,0,0.5)
+    .navigation
+        padding-top: 4rem
+        top: 50%
+        left: 50%
+        transform: translate(-50%,-50%)
+        ul
+            display: block
+        &__item
+            text-align: center
+            margin-bottom: 2rem
+        &__item a
+            text-align: center
+            font-size: 2.5rem

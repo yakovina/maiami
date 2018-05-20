@@ -10,7 +10,7 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 940px;
+  width: 90%;
 }
 
 .form__field {
@@ -172,11 +172,21 @@ body {
   font-style: normal;
 }
 
+@media all and (max-width: 960px) {
+  .section {
+    padding: 7rem 0;
+  }
+}
+
 .wrapper {
   background: #ffffff;
   position: relative;
   z-index: 200;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+}
+
+.welcome {
+  position: relative;
 }
 
 .welcome .container {
@@ -227,6 +237,9 @@ body {
 .slide_item {
   height: 100vh;
   min-width: 100% !important;
+  object-fit: cover;
+  object-position: 50% 50%;
+  overflow: hidden;
 }
 
 .navigation {
@@ -241,6 +254,7 @@ body {
   justify-content: space-between;
   list-style-type: none;
   padding: 0;
+  flex-wrap: wrap;
 }
 
 .navigation__item a {
@@ -249,6 +263,46 @@ body {
   color: #ffffff;
   font-weight: 400;
   font-size: 1.6rem;
+}
+
+@media all and (max-width: 720px) {
+  .header__logo {
+    left: 0;
+    position: absolute;
+    transform: translate(0, 0);
+  }
+  .header__phone {
+    display: none;
+  }
+  .header__call {
+    font-size: 2rem;
+  }
+  .welcome:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .navigation {
+    padding-top: 4rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .navigation ul {
+    display: block;
+  }
+  .navigation__item {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .navigation__item a {
+    text-align: center;
+    font-size: 2.5rem;
+  }
 }
 
 .appart {
@@ -326,6 +380,7 @@ body {
 .about .container {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .about__moto {
@@ -356,6 +411,25 @@ body {
   list-style-type: decimal;
   margin: 5rem 0;
   padding-left: 0;
+}
+
+@media all and (max-width: 960px) {
+  .about {
+    background-color: #fff;
+  }
+  .about__moto {
+    width: 100%;
+    padding-bottom: 3rem;
+  }
+  .about__moto br {
+    display: none;
+  }
+  .about__text {
+    width: 100%;
+  }
+  .about__text ol {
+    margin-left: 2em;
+  }
 }
 
 .testimonials .testwrapper {
