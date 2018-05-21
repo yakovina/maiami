@@ -15,10 +15,37 @@
         font-style: normal
         span
             font-weight: 400
-            color: #00aaef            
+            color: #00aaef        
+    .bluescreen
+        background: rgba(239, 251, 251, 0);
+        color: #086A87;
+        text-align: center;
+        transition: 0.3s ease-in-out
+        position: absolute;
+        width: calc(100% - 20px);
+        height: 0
+        opacity: 0
+        a
+            text-decoration: none
+            position: relative
+            top: 50%
+            font-family: "Ubuntu", sans-serif
+            font-size: 2rem
+            color: #ffffff
+            font-weight: 400
+            text-transform: uppercase
+    .appart__wrapper:hover .bluescreen
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3);
+            position: absolute;
+            top: 0;
+            border-top-right-radius: 0;
+            width: calc(100% - 20px);
+            opacity: 1
     &__wrapper
         height: 26rem
         overflow: hidden
+        position: relative
         img
             height: 100%
             width: 100%
@@ -26,8 +53,7 @@
             object-fit: cover;
             object-position: 50% 25%;
             transition: 0.5s
-        &:nth-of-type(odd)
-            img
+            &:nth-of-type(odd)
                 padding-right: 20px
                 box-sizing: border-box
 .appart_mod-right
@@ -54,6 +80,10 @@
 
 @media all and (max-width: 720px)
     .gallery
+        .bluescreen
+            width: 100%
+        .appart__wrapper:hover .bluescreen
+            width: 100%
         .appart
             .appart__wrapper
                 width: 100%

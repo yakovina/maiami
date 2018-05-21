@@ -217,6 +217,7 @@ body {
 .welcome {
   position: relative;
   min-height: 100vh;
+  box-shadow: 0 0 3rem rgba(0, 0, 0, 0.5);
 }
 
 .welcome .container {
@@ -361,9 +362,42 @@ body {
   color: #00aaef;
 }
 
+.appart .bluescreen {
+  background: rgba(239, 251, 251, 0);
+  color: #086A87;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+  position: absolute;
+  width: calc(100% - 20px);
+  height: 0;
+  opacity: 0;
+}
+
+.appart .bluescreen a {
+  text-decoration: none;
+  position: relative;
+  top: 50%;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2rem;
+  color: #ffffff;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.appart .appart__wrapper:hover .bluescreen {
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  border-top-right-radius: 0;
+  width: calc(100% - 20px);
+  opacity: 1;
+}
+
 .appart__wrapper {
   height: 26rem;
   overflow: hidden;
+  position: relative;
 }
 
 .appart__wrapper img {
@@ -375,7 +409,7 @@ body {
   transition: 0.5s;
 }
 
-.appart__wrapper:nth-of-type(odd) img {
+.appart__wrapper img:nth-of-type(odd) {
   padding-right: 20px;
   box-sizing: border-box;
 }
@@ -409,6 +443,12 @@ body {
 }
 
 @media all and (max-width: 720px) {
+  .gallery .bluescreen {
+    width: 100%;
+  }
+  .gallery .appart__wrapper:hover .bluescreen {
+    width: 100%;
+  }
   .gallery .appart .appart__wrapper {
     width: 100%;
   }
