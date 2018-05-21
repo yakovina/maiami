@@ -372,6 +372,7 @@ body {
   overflow: hidden;
   object-fit: cover;
   object-position: 50% 25%;
+  transition: 0.5s;
 }
 
 .appart__wrapper:nth-of-type(odd) img {
