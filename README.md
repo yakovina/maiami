@@ -1,4 +1,2 @@
 # maiami
-maiami template by artukh
-
-( https://yakovina.github.io/maiami/)
+[maiami template](https://yakovina.github.io/maiami/)
